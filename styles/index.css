@@ -244,8 +244,6 @@ body {
   object-fit: cover;
 }
 .section-lugares .mapa svg {
-  box-sizing: border-box;
-  object-fit: cover;
   transform: rotate(360deg);
   transition: all 3s;
 }
