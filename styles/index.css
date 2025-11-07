@@ -185,12 +185,16 @@ body {
   font-size: 2.5rem;
   margin-bottom: 0;
   color: white;
+  box-sizing: border-box;
+  object-fit: cover;
 }
 .section-banner .section-banner-content h5 {
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 0;
   margin-top: 20px;
+  box-sizing: border-box;
+  object-fit: cover;
 }
 .section-banner .section-banner-content p {
   font-size: 0.8rem;
@@ -246,7 +250,21 @@ body {
 .section-lugares .mapa svg {
   transform: rotate(360deg);
   transition: all 3s;
+  box-sizing: border-box;
+  object-fit: cover;
 }
+/*O SVG tem de ter um tamanho menor em telemóveis*/
+.section-lugares .mapa svg {
+  height: 220px !important;
+  width: 220px !important;
+}
+@media only screen and (min-width: 800px) {
+  .section-lugares .mapa svg {
+    height: 600px !important;
+    width: 600px !important;
+  }
+}
+/*FIM do Midea Query SVG*/
 
 .section-lugares .mapa svg.visible {
   transform: rotate(0deg);
