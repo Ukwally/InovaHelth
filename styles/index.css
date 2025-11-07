@@ -364,6 +364,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .section-equipa h1 {
   margin-top: 0;
