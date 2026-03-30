@@ -149,8 +149,9 @@ body {
   }
 }
 /*Banner*/
+/*O background image*/
 .section-banner {
-  background: url(../assets/images/inovaHealth.png);
+  background: url(../assets/images/banner1.2.jpg);
   background-repeat: no-repeat;
   height: calc(100vh - 126px);
   display: flex;
@@ -158,15 +159,24 @@ body {
   justify-content: center;
   background-size: cover;
 }
+/* para adicionar o elemento com blur */
 .section-banner::before {
   content: "";
   height: calc(100vh - 125px);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);/*20px antes do vídeo*/
   background-color: #0611135b;
   width: 100%;
   position: absolute;
   top: 1;
   z-index: 1;
+}
+
+/*ABAIXO adicionado pelo video.Inexistente antes do video*/
+.section-banner video {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  height: calc(100vh - 125px);
 }
 .section-banner .section-banner-content {
   position: absolute;
