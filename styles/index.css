@@ -70,6 +70,28 @@
   --terciaryBlue20: #07162c;
   --terciaryBlue21: #030b16;
   --terciaryBlue22: #000000;
+  /*GREY*/
+  --dark1: #ffffff;
+  --dark1: #f2f2f2;
+  --dark2: #e6e6e6;
+  --dark3: #d9d9d9;
+  --dark4: #cccccc;
+  --dark5: #bfbfbf;
+  --dark6: #b3b3b3;
+  --dark7: #a6a6a6;
+  --dark8: #999999;
+  --dark9: #8c8c8c;
+  --dark10: #808080;
+  --dark11: #737373;
+  --dark12: #666666;
+  --dark13: #595959;
+  --dark14: #4d4d4d;
+  --dark15: #404040;
+  --dark16: #333333;
+  --dark17: #262626;
+  --dark18: #1a1a1a;
+  --dark19: #0d0d0d;
+  --dark20: #000000;
 }
 .sticked {
   position: fixed;
@@ -85,7 +107,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-
+header {
+  position: relative;
+}
 .header-top {
   height: 36px;
   width: 100%;
@@ -107,7 +131,7 @@ body {
   align-items: center;
   justify-content: center;
   line-height: normal;
-  color: whitesmoke;
+  color: white;
 }
 .header-bottom {
   height: 90px;
@@ -137,7 +161,29 @@ body {
   text-decoration: none;
   color: grey;
   margin-left: 10px;
-  font-size: 15.2px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.header-bottom:after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    #e3003a 0%,
+    #643688 21%,
+    #14387f 41%,
+    #0070e5 64%,
+    #76b82a 84%,
+    #fcbe00 100%
+  );
+  z-index: 20;
+  box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+  mix-blend-mode: multiply;
 }
 /*HEADER Media Query*/
 @media only screen and (min-width: 800px) {
@@ -163,8 +209,8 @@ body {
 .section-banner::before {
   content: "";
   height: calc(100vh - 125px);
-  backdrop-filter: blur(10px);/*20px antes do vídeo*/
-  background-color: #0611135b;
+  backdrop-filter: blur(7px); /*20px antes do vídeo*/
+  background-color: #06111391;
   width: 100%;
   position: absolute;
   top: 1;
@@ -300,6 +346,106 @@ body {
 @media only screen and (min-width: 800px) {
   .section-lugares .mapa {
     padding-bottom: 5%;
+  }
+}
+/*section-servicos*/
+.section-servicos {
+  background-color: #fff;
+  padding: 5%;
+}
+.section-titulo-set {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-titulo-set .section-titulo {
+  background: linear-gradient(
+    45deg,
+    var(--primaruBlue10),
+    var(--primaruBlue10),
+    var(--primaruBlue16)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  margin: auto;
+}
+.section-titulo-set .section-descricao {
+  color: var(--dark10);
+}
+.section-titulo-set .titulo-head {
+  background-color: var(--primaruBlue11);
+  color: var(--primaruBlue2);
+  border-radius: 20px;
+  padding: 2px 0;
+  margin: 0 15%;
+}
+.section-servicos .section-servicos-set {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+.section-servicos .section-servicos-set .section-servicos-iten {
+  background-color: white;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 280px;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+.section-servicos
+  .section-servicos-set
+  .section-servicos-iten
+  .servicos-iten-icon {
+  height: 80px;
+  width: 80px;
+}
+.section-servicos
+  .section-servicos-set
+  .section-servicos-iten
+  .servicos-iten-icon
+  img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.section-servicos
+  .section-servicos-set
+  .section-servicos-iten
+  .servicos-iten-nome {
+  color: var(--primaruBlue10);
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: center;
+}
+.section-servicos
+  .section-servicos-set
+  .section-servicos-iten
+  .servicos-iten-btn {
+  margin-top: 20px;
+}
+.section-servicos
+  .section-servicos-set
+  .section-servicos-iten
+  .servicos-iten-btn
+  button {
+  background-color: var(--primaruBlue13);
+  color: whitesmoke;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 800px) {
+  .section-servicos .section-servicos-set {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 /*section-diferencial*/
