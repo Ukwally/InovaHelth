@@ -32,3 +32,17 @@ window.addEventListener('DOMContentLoaded', function () {
         bannertext.classList.add('visible');
     }
 });
+
+
+
+//par abrir o menu abaixo
+function abrirMenu() {
+    document.getElementById('menu').classList.toggle('hidden-menu');
+    document.getElementById('icon-close-menu-id').classList.toggle('hidden-menu');
+
+    setTimeout(() => {
+        document.getElementById('icon-close-menu-id').classList.toggle('visivel');
+        document.getElementById('nav-item-set-id').classList.toggle('visivel');
+    }, 1);
+
+}

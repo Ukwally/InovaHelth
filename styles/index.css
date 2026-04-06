@@ -99,7 +99,7 @@
 .sticked {
   position: fixed;
   top: 0;
-  z-index: 7;
+  z-index: 15;
   box-shadow: 1px 1px 7px 1px rgba(128, 128, 128, 0.342);
 }
 body {
@@ -152,22 +152,66 @@ header {
 .header-bottom div img {
   max-height: 100%;
 }
-.header-bottom nav {
+.hidden-menu {
   display: none;
+}
+.header-bottom .nav {
+  background-color: rgba(0, 0, 0, 0.459);
+  backdrop-filter: blur(1px);
+  position: fixed;
+  height: 110vh;
+  width: 100vw;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.header-bottom .nav .icon-close-menu {
+  background-color: var(--primaruBlue13);
+  display: flex;
+  width: 80vw;
+  padding: 5px 20px;
+  float: right;
+  justify-content: end;
+  box-sizing: border-box;
+  transform: translateX(200px);
+  transition: all 100ms;
+}
+.header-bottom .nav .icon-close-menu.visivel {
+  transform: translateX(0);
+}
+.header-bottom .nav .icon-close-menu svg {
+  stroke: var(--primaruBlue1);
+}
+.header-bottom .nav .nav-item-set {
+  background-color: white;
+  height: 100%;
+  width: 80vw;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(200px);
+  transition: all 100ms;
+  box-sizing: border-box;
+}
+.header-bottom .nav #nav-item-set-id.visivel {
+  transform: translateX(0);
 }
 .header-bottom i {
   display: block;
   font-size: 25px;
   color: var(--secundaryBlue7);
 }
-.header-bottom nav a {
+
+.header-bottom .nav .nav-item-set a {
   text-decoration: none;
-  color: grey;
+  color: var(--primaruBlue14);
+  font-weight: 600;
+  padding: 10px;
+  font-size: 13px;
   margin-left: 10px;
-  font-size: 12px;
   text-transform: uppercase;
 }
-
 .header-bottom:after {
   content: "";
   width: 100%;
@@ -199,11 +243,33 @@ header {
 }
 /*HEADER Media Query*/
 @media only screen and (min-width: 800px) {
-  .header-bottom nav {
+  .header-bottom .nav {
     display: block;
+    background-color: transparent;
+    position: static;
+    height: fit-content;
+    width: fit-content;
+    z-index: 1;
+    overflow: unset;
+  }
+  .header-bottom .nav .icon-close-menu {
+    display: none;
   }
   .header-bottom i {
     display: none;
+  }
+  .header-bottom .nav .nav-item-set {
+    background-color: transparent;
+    height: fit-content;
+    width: fit-content;
+    float: none;
+    display: block;
+    transform: translateX(0);
+  }
+  .header-bottom .nav .nav-item-set a {
+    color: grey;
+    font-size: 12px;
+    font-weight: unset;
   }
 }
 /*Banner*/
