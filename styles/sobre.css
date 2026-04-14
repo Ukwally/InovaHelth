@@ -1,6 +1,9 @@
 * {
   font-family: sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --primaruBlue1: #ffffff;
   --primaruBlue2: #ecf6f9;
@@ -198,6 +201,13 @@ header {
 /*BIO*/
 .section {
   padding: 5% 10%;
+}
+.section-header h1 {
+  color: var(--primaruBlue14);
+  font-size: 2.5rem;
+}
+.section-header p {
+  color: var(--dark12);
 }
 .section-bio {
   background-color: var(--primaruBlue10);
@@ -530,11 +540,11 @@ header {
   background-color: var(--primaruBlue6);
 }
 .section-facs .section-facs-set {
-  padding: 20px;
+  padding: 20px 0;
 }
 .section-facs .section-facs-set .section-facs-item {
   background-color: var(--primaruBlue12);
-  padding: 10px 30px;
+  padding: 10px 20px;
   margin-bottom: 20px;
   border-radius: 7px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -558,14 +568,23 @@ header {
   transition: all 0.4s;
 }
 .section-facs-set .section-facs-item .fac-body.facAberto {
-  height: 60px;
+  height: 65px;
   margin-top: 10px;
 }
 .section-facs-set .section-facs-item .fac-head .fac-head-chevron {
+  margin-left: 5px;
   transform: rotate(90deg);
   display: inline-flex;
   transition: all 0.3s;
 }
 .section-facs-set .section-facs-item .fac-head .fac-head-chevron.facAberto {
   transform: rotate(-90deg);
+}
+@media only screen and (min-width: 800px) {
+  .section-facs .section-facs-set {
+    padding: 20px;
+  }
+  .section-facs .section-facs-set .section-facs-item {
+    padding: 10px 30px;
+  }
 }
