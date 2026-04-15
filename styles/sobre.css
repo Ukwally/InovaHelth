@@ -253,10 +253,12 @@ header {
     #0070e5 64%,
     #76b82a 84%,
     #76b82a 100%
-  );*/
+    );
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+  */
   background: linear-gradient(135deg, #00c4cc, #7d2ae8);
+  box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.132);
   z-index: 20;
-  box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
   mix-blend-mode: multiply;
 }
 
@@ -798,4 +800,3 @@ footer {
     margin-top: 20px;
   }
 }
-
