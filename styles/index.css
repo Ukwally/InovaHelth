@@ -127,7 +127,7 @@ header {
   box-sizing: border-box;
   object-fit: cover;
 }
-.header-top i {
+.header-top a i, .header-top i  {
   background-color: var(--primaruBlue12);
   margin-left: 5px;
   height: 25px;
@@ -138,6 +138,9 @@ header {
   justify-content: center;
   line-height: normal;
   color: white;
+}
+.header-top a {
+ text-decoration: none;
 }
 .header-bottom {
   height: 90px;
@@ -215,6 +218,20 @@ header {
   margin-left: 10px;
   text-transform: uppercase;
 }
+.header-bottom .nav .nav-item-set a .iten-menu-icon { 
+  display: inline-flex;
+  background-color: var(--primaruBlue4);
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.header-bottom .nav .nav-item-set a .iten-menu-icon i {
+  color: var(--primaruBlue1);
+  font-size: 18px;
+} 
 .header-bottom:after {
   content: "";
   width: 100%;
@@ -293,7 +310,7 @@ header {
   height: calc(100vh - 125px);
   backdrop-filter: blur(7px); /*20px antes do vídeo*/
   /*background-color: #06111391;*/
-  background-color: #606d6f8a;
+  background-color: #7a7a7a7d;
   width: 100%;
   position: absolute;
   top: 1;
@@ -322,13 +339,21 @@ header {
 }
 .section-banner .section-banner-content h3 {
   font-size: 2.5rem;
-  margin-bottom: 0;
+  margin: 0;
   color: white;
   box-sizing: border-box;
   object-fit: cover;
 }
 .section-banner .section-banner-content h3 span {
   color: var(--primaruBlue3);
+  background: linear-gradient(
+    45deg,
+    var(--primaruBlue3),
+    var(--primaruBlue6),
+    var(--primaruBlue3)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .section-banner .section-banner-content h5 {
   font-size: 1.5rem;
@@ -347,23 +372,31 @@ header {
   font-weight: 400;
   background-color: transparent;
   border: none;
-  padding: 5px 20px;
+  padding: 5px 30px;
   border-radius: 20px;
   color: white;
   text-align: center;
-  border: 2px solid var(--secundaryBlue7);
+  border: 1px solid var(--secundaryBlue7);
   line-height: 1;
+  background: linear-gradient(135deg,#78c1d382 0%, #78c1d382 70%, var(--primaruBlue7) 100%);
+  box-shadow: 0 2px 8px #33889d76;
+  transition: all 0.2s;
+}
+.section-banner .section-banner-content button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 12px #145e7163;
 }
 .section-banner .section-banner-content button .banner-cta-span2 {
   background-color: #ffffff37;
-  height: 30px;
-  width: 30px;
+  height: 34px;
+  width: 34px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
-  padding-left: 2px;
+  border-radius: 50%;
+  padding-left: 4px;
   box-sizing: border-box;
+  line-height: 0;
 }
 /*BANNER Media Query*/
 @media only screen and (min-width: 800px) {
@@ -374,18 +407,11 @@ header {
     font-size: 3rem;
   }
   .section-banner .section-banner-content p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .section-banner .section-banner-content button {
     font-size: 1.2rem;
     font-weight: 400;
-    background-color: transparent;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: white;
-    text-align: center;
-    border: 2px solid var(--secundaryBlue7);
   }
 }
 /*Section Lugares*/
