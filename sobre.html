@@ -7,26 +7,40 @@
     <title>Inova Health</title>
     <link rel="stylesheet" href="./styles/sobre.css">
     <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
         <div class="header-top">
             <i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram"></i>
+            <a href="https://www.instagram.com/inovahealthorg" target="_self">
+                <i class="fa fa-instagram"> </i>
+            </a>
             <i class="fa fa-linkedin"></i>
             <i class="fa fa-youtube"></i>
             <i class="fa fa-twitter"></i>
         </div>
         <div class="header-bottom" id="header">
             <div><img src="./assets/images/inovaHealthBGLess.png" alt=""></div>
-            <i class="fa fa-bars"></i>
-            <nav>
-                <a href="#">Corporativo </a>
-                <a href="#">Utente </a>
-                <a href="#">Profissional </a>
-                <a href="contactos.html">Contactos</a>
-                <a href="index.html">Casa</a>
+            <i class="fa fa-bars" onclick="abrirMenu()"></i>
+            <nav class="nav hidden-menu" id="menu">
+                <span class="icon-close-menu" onclick="abrirMenu()" id="icon-close-menu-id">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-x-icon lucide-x">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </span>
+                <span class="nav-item-set" id="nav-item-set-id">
+                    <a href="#"> <span class="iten-menu-icon"> <i class="fa fa-building-o"></i></span> Corporativo </a>
+                    <a href="#"> <span class="iten-menu-icon"> <i class="fa fa-user"></i></span> Utente </a>
+                    <a href="#"> <span class="iten-menu-icon"> <i class="fa fa-briefcase"></i></span> Profissional </a>
+                    <a href="contactos.html"> <span class="iten-menu-icon"> <i class="fa fa-phone-square"></i></span>
+                        Contactos</a>
+                    <a href="index.html"> <span class="iten-menu-icon"> <i class="fa fa-home"></i></span>Inicio</a>
+                </span>
             </nav>
         </div>
     </header>
@@ -91,8 +105,9 @@
             </div>
             <div class="section-dados-set">
                 <div class="section-dados-item">
-                    <p class="purecounter">32</p>
-                    <span class="dados-item-titulo" >Hospitais</span>
+                    <p data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2"
+                        class="purecounter">32</p>
+                    <span class="dados-item-titulo">Hospitais</span>
                     <ul>
                         <li><span>✔</span> <span>Melhoria de processos operacionais </span> </li>
                         <li><span>✔</span> <span>Redução de custos </span> </li>
@@ -103,8 +118,9 @@
                     <div class="dados-item-footer"><span>SOLICITE VOCÊ TAMBÉM</span> <span>⚡</span> </div>
                 </div>
                 <div class="section-dados-item">
-                    <p class="purecounter">32</p>
-                    <span class="dados-item-titulo" >Projectos</span>
+                    <p data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2"
+                        class="purecounter">32</p>
+                    <span class="dados-item-titulo">Projectos</span>
                     <ul>
                         <li><span>✔</span> <span>Melhoria de processos operacionais </span> </li>
                         <li><span>✔</span> <span>Redução de custos </span> </li>
@@ -115,8 +131,9 @@
                     <div class="dados-item-footer"><span>SOLICITE VOCÊ TAMBÉM</span> <span>💎</span> </div>
                 </div>
                 <div class="section-dados-item">
-                    <p class="purecounter">32</p>
-                    <span class="dados-item-titulo" >Projectos</span>
+                    <p data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2"
+                        class="purecounter">32</p>
+                    <span class="dados-item-titulo">Projectos</span>
                     <ul>
                         <li><span>✔</span> <span>Melhoria de processos operacionais </span> </li>
                         <li><span>✔</span> <span>Redução de custos </span> </li>
@@ -225,8 +242,9 @@
                     </div>
                 </div>
                 <div class="section-facs-item">
-                    <div class="fac-head" onclick="mostrarFac('fac3')"><span class="fac-head-pergunta">Oqué eficiência de Sistemas de Saúde ?
-                            </span> <span class="fac-head-chevron" id="fac1chevron">&#10095 </span></div>
+                    <div class="fac-head" onclick="mostrarFac('fac3')"><span class="fac-head-pergunta">Oqué eficiência
+                            de Sistemas de Saúde ?
+                        </span> <span class="fac-head-chevron" id="fac1chevron">&#10095 </span></div>
                     <div class="fac-body" id="fac3">
                         A Medicina do Trabalho avalia a aptidão do trabalhador para as funções que desempenha, tendo em
                         conta o estado de saúde do mesmo e os riscos profissionais a que está exposto. No final da
@@ -236,8 +254,9 @@
                     </div>
                 </div>
                 <div class="section-facs-item">
-                    <div class="fac-head" onclick="mostrarFac('fac4')"><span class="fac-head-pergunta">Oque é telemedicina ?
-                            </span> <span class="fac-head-chevron" id="fac1chevron">&#10095 </span></div>
+                    <div class="fac-head" onclick="mostrarFac('fac4')"><span class="fac-head-pergunta">Oque é
+                            telemedicina ?
+                        </span> <span class="fac-head-chevron" id="fac1chevron">&#10095 </span></div>
                     <div class="fac-body" id="fac4">
                         A Medicina do Trabalho avalia a aptidão do trabalhador para as funções que desempenha, tendo em
                         conta o estado de saúde do mesmo e os riscos profissionais a que está exposto. No final da
@@ -247,8 +266,9 @@
                     </div>
                 </div>
                 <div class="section-facs-item">
-                    <div class="fac-head" onclick="mostrarFac('fac5')"><span class="fac-head-pergunta">Oqué inovação organizacional?
-                            </span> <span class="fac-head-chevron" id="fac1chevron">&#10095 </span></div>
+                    <div class="fac-head" onclick="mostrarFac('fac5')"><span class="fac-head-pergunta">Oqué inovação
+                            organizacional?
+                        </span> <span class="fac-head-chevron" id="fac1chevron">&#10095 </span></div>
                     <div class="fac-body" id="fac5">
                         A Medicina do Trabalho avalia a aptidão do trabalhador para as funções que desempenha, tendo em
                         conta o estado de saúde do mesmo e os riscos profissionais a que está exposto. No final da
@@ -261,8 +281,47 @@
         </section>
 
     </main>
+    <footer>
+        <div class="footer-top">
+            <img src="./assets/images/inovaHealthBGLess.png" alt="">
+            <div class="footer-list-set">
+                <ul>
+                    <li><b>NAVEGAÇÃO</b></li>
+                    <li>Inicio</li>
+                    <li>Sobre</li>
+                    <li>Contactos</li>
+                    <li>Corporativo</li>
+                    <li>Profissional</li>
+                </ul>
+                <ul>
+                    <li><b>CONTACTOS</b></li>
+                    <li>Twitter</li>
+                    <li>Linkedin</li>
+                    <li>Facebook</li>
+                    <li>Intagram</li>
+                    <li>Contactos </li>
+                </ul>
+                <ul>
+                    <li><b>CRÉDITOS</b></li>
+                    <li><a href="#">Incons8</a></li>
+                    <li><a href="#">Lucide Icons</a></li>
+                    <li><a href="https://ukwally.github.io/Elisabeth">Elisabeth Pedro</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-helf"></div>
+        <div class="footer-bottom">
+            Desenvolvido com <span class="footer-span-heart"> ❤</span> por :<a
+                href="https://ukwally.github.io/Elisabeth" target="_blank"> ELISABETH PEDRO</a>
+        </div>
+        <div class="footer-CopyRight"><span>&copy</span> InovaHealth, todos os direitos reservados.</div>
+    </footer>
 </body>
-
+<script src="./scripts/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+<script>
+    new PureCounter();
+</script>
 <script>
     function mostrarFac(facId) {
         const fac = facId;
