@@ -635,7 +635,7 @@ header {
 }
 /*PERGUNTAS FREQUENTES*/
 .section-facs {
-  background-color: var(--primaruBlue6);
+  background-color: var(--primaruBlue2);
 }
 .section-facs .section-facs-set {
   padding: 20px 0;
@@ -652,7 +652,7 @@ header {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  color: whitesmoke;
+  color: var(--primaruBlue1);
   font-weight: 500;
   font-size: 1.2rem;
   box-sizing: border-box;

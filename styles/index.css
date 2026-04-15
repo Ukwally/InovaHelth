@@ -107,6 +107,8 @@ html {
   top: 0;
   z-index: 15;
   box-shadow: 1px 1px 7px 1px rgba(128, 128, 128, 0.342);
+ background-color: #ffffffeb !important;
+ backdrop-filter: blur(20px);
 }
 body {
   margin: 0;
@@ -115,6 +117,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  filter: grayscale(50%);
 }
 header {
   position: relative;
@@ -263,7 +266,7 @@ header {
   );
   box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
   */
-  box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.132);
+  box-shadow: 6px 3px 6px rgba(0, 0, 0, 0.132);
   background: linear-gradient(135deg, #00c4cc, #7d2ae8);
   z-index: 20;
   mix-blend-mode: multiply;
@@ -319,7 +322,7 @@ header {
   height: calc(100vh - 125px);
   backdrop-filter: blur(7px); /*20px antes do vídeo*/
   /*background-color: #06111391;*/
-  background-color: #6666667d;
+  background-color: #66666664;
   width: 100%;
   position: absolute;
   top: 1;
