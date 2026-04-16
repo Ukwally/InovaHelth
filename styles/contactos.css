@@ -277,16 +277,19 @@ main {
   background-color: var(--primaruBlue10);
   padding: 5px 13px;
   border-radius: 15px;
+  border: 1px solid var(--primaruBlue9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
 }
 .contactos-linhas .contactos-cta .cta-texto {
   color: white;
   text-align: center;
+  font-size: 15px;
 }
 
 /*Form contactos*/
 .contactos-formulario {
-  border: 1px solid var(--primaruBlue2);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px dashed var(--primaruBlue2);
   padding: 20px;
   border-radius: 5px;
   flex: 1;
@@ -298,13 +301,19 @@ main {
 }
 .contactos-formulario form .form-section label {
   font-weight: 500;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 .contactos-formulario form .form-section input {
   height: 27px;
-  border: 1px solid var(--primaruBlue4);
   border-radius: 4px;
   margin-bottom: 20px;
+  border: 1px solid var(--primaruBlue7);
+}
+.contactos-formulario form .form-section input:focus {
+  outline-width: 3px;
+  outline-style: solid;
+  outline-color: var(--secundaryBlue2);
+  border: 1px solid var(--primaruBlue7);
 }
 .contactos-formulario form .form-section textarea {
   resize: none;
@@ -312,6 +321,12 @@ main {
   border: 1px solid var(--primaruBlue6);
   border-radius: 4px;
   margin-bottom: 10px;
+}
+.contactos-formulario form .form-section textarea:focus {
+  outline-width: 3px;
+  outline-style: solid;
+  outline-color: var(--secundaryBlue2);
+  border: 1px solid var(--primaruBlue7);
 }
 .contactos-formulario form .form-section input::placeholder,
 textarea::placeholder {
