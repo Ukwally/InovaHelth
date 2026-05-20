@@ -106,6 +106,14 @@ body {
   margin: 0;
   color: #29373d;
 }
+.texto-aculto-para-mobile {
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  .texto-aculto-para-mobile {
+    display: initial;
+  }
+}
 header {
   position: relative;
 }
@@ -372,7 +380,7 @@ textarea::placeholder {
   font-size: 0.9rem;
 }
 .div-mapa {
-  height: 300px;
+  height: auto;
   background-color: var(--primaruBlue2);
   padding: 10px;
   border-radius: 5px;
@@ -381,7 +389,7 @@ textarea::placeholder {
   border: none;
   height: 100%;
   width: 100%;
-  border: 1px dashed var(--primaruBlue13);
+  border: 1px dashed var(--primaruBlue10);
   border-radius: 5px;
 }
 
@@ -391,5 +399,6 @@ textarea::placeholder {
   }
   .div-mapa {
     width: 50%;
+    height: 300px;
   }
 }
