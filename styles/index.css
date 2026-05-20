@@ -3,7 +3,6 @@
   font-family: Inter, sans-serif;
   */
   font-family:
-    Poppins,
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
@@ -238,7 +237,7 @@ header {
 .header-bottom .nav #nav-item-set-id.visivel {
   transform: translateX(0);
 }
-.header-bottom i {
+.header-bottom .openMenu {
   display: block;
   font-size: 25px;
   color: var(--secundaryBlue7);
@@ -255,16 +254,16 @@ header {
 }
 .header-bottom .nav .nav-item-set a .iten-menu-icon {
   display: inline-flex;
-  background-color: var(--primaruBlue4);
-  width: 36px;
-  height: 36px;
+  border: 1px solid var(--primaruBlue2);
+  width: 30px;
+  height: 30px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   margin-right: 10px;
 }
 .header-bottom .nav .nav-item-set a .iten-menu-icon i {
-  color: var(--primaruBlue1);
+  color: var(--primaruBlue4);
   font-size: 18px;
 }
 .header-bottom:after {
@@ -313,7 +312,7 @@ header {
   .header-bottom .nav .icon-close-menu {
     display: none;
   }
-  .header-bottom i {
+  .header-bottom .openMenu {
     display: none;
   }
   .header-bottom .nav .nav-item-set {
@@ -343,6 +342,21 @@ header {
   align-items: center;
   justify-content: center;
   background-size: cover;
+}
+.section-banner * {
+  font-family:
+    Poppins,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 /* para adicionar o elemento com blur */
 .section-banner::before {
