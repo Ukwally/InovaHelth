@@ -192,6 +192,9 @@ header {
 .header-bottom div img {
   max-height: 100%;
 }
+.header-bottom i svg {
+  stroke: var(--color-slate-500);
+}
 .hidden-menu {
   display: none;
 }
@@ -312,7 +315,7 @@ header {
   .header-bottom .nav .icon-close-menu {
     display: none;
   }
-  .header-bottom .openMenu {
+  .header-bottom i {
     display: none;
   }
   .header-bottom .nav .nav-item-set {
@@ -337,7 +340,7 @@ header {
 .section-banner {
   background: url(../assets/images/banner1.2.jpg);
   background-repeat: no-repeat;
-  height: calc(100vh - 126px);
+  height: calc(100vh - 125px);
   display: flex;
   align-items: center;
   justify-content: center;
