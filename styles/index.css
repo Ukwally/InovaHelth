@@ -126,7 +126,7 @@ html {
 }
 .sticked {
   position: fixed;
-  top: 0;/*OBS o topo ten de contar com o height do header-top*/
+  top: 0; /*OBS o topo ten de contar com o height do header-top*/
   z-index: 15;
   box-shadow: 1px 1px 7px 1px rgba(128, 128, 128, 0.342);
 }
@@ -154,7 +154,8 @@ header {
 .header-top {
   height: 36px;
   width: 100%;
-  background-color: var(--primaruBlue13);
+  /*background-color: var(--primaruBlue13);*/
+  background-color: var(--secundaryBlue12);
   display: flex;
   justify-content: end;
   align-items: center;
@@ -164,7 +165,8 @@ header {
 }
 .header-top a i,
 .header-top i {
-  background-color: var(--primaruBlue12);
+  /*background-color: var(--primaruBlue12);*/
+  background-color: var(--secundaryBlue11);
   margin-left: 5px;
   height: 25px;
   width: 25px;
@@ -288,7 +290,7 @@ header {
     #76b82a 84%,
     #fcbe00 100%
   );*/
-  /* background: linear-gradient(
+/* background: linear-gradient(
     90deg,
     #b07200 0%,
     #643688 21%,
@@ -429,8 +431,11 @@ header {
     #78c1d382 70%,
     var(--primaruBlue7) 100%
   );*/
+  /*box-shadow: 0 2px 8px #3067757e;
+    background-color: var(--primaruBlue8);
+  box-shadow: 0 10px 25px -5px var(--tw-shadow-color, #004d6bc9);
+  */
   background-color: #004d6b67;
-  /*box-shadow: 0 2px 8px #3067757e;*/
   box-shadow: 0 10px 25px -5px var(--tw-shadow-color, #00283894);
   transition: all 0.2s;
   color: var(--primaruBlue1);
