@@ -154,8 +154,7 @@ header {
 .header-top {
   height: 36px;
   width: 100%;
-  /*background-color: var(--primaruBlue13);*/
-  background-color: var(--secundaryBlue12);
+  background-color: var(--primaruBlue13);
   display: flex;
   justify-content: end;
   align-items: center;
@@ -165,8 +164,7 @@ header {
 }
 .header-top a i,
 .header-top i {
-  /*background-color: var(--primaruBlue12);*/
-  background-color: var(--secundaryBlue11);
+  background-color: var(--primaruBlue12);
   margin-left: 5px;
   height: 25px;
   width: 25px;
@@ -197,7 +195,7 @@ header {
   max-height: 100%;
 }
 .header-bottom i svg {
-  stroke: var(--color-slate-500);
+  stroke: var(--secundaryBlue15);
 }
 .hidden-menu {
   display: none;
@@ -259,6 +257,7 @@ header {
   margin-left: 10px;
   text-transform: uppercase;
 }
+/*OBS ATT REMOVER O CODIGO ABAIXO*/
 .header-bottom .nav .nav-item-set a .iten-menu-icon {
   display: inline-flex;
   border: 1px solid var(--primaruBlue2);
@@ -268,6 +267,7 @@ header {
   justify-content: center;
   border-radius: 50%;
   margin-right: 10px;
+  display: none;
 }
 .header-bottom .nav .nav-item-set a .iten-menu-icon i {
   color: var(--primaruBlue4);
@@ -302,8 +302,9 @@ header {
   box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
   /
   box-shadow: 6px 3px 6px rgba(0, 0, 0, 0.132);
-  background: linear-gradient(135deg, #00c4cc, #7d2ae8);
   z-index: 20;
+  background: linear-gradient(135deg, #00c4cc, var(--terciaryBlue10));
+
   mix-blend-mode: multiply;
 }*/
 /*HEADER Media Query*/
@@ -760,9 +761,6 @@ header {
   /*border: 1px dashed var(--dark2);*/
   width: calc(100% - 40px);
   color: var(--color-slate-500);
-}
-.each-diferencial .diferencial-descricao small i {
-  color: var(--dark8);
 }
 .each-diferencial .diferencial-icon {
   background-color: var(--primaruBlue7);
