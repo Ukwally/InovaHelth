@@ -126,7 +126,7 @@ html {
 }
 .sticked {
   position: fixed;
-  top: 0;
+  top: 0;/*OBS o topo ten de contar com o height do header-top*/
   z-index: 15;
   box-shadow: 1px 1px 7px 1px rgba(128, 128, 128, 0.342);
 }
@@ -148,6 +148,8 @@ body {
 }
 header {
   position: relative;
+  height: 126px;
+  width: 100%;
 }
 .header-top {
   height: 36px;
@@ -269,6 +271,7 @@ header {
   color: var(--primaruBlue4);
   font-size: 18px;
 }
+/*
 .header-bottom:after {
   content: "";
   width: 100%;
@@ -295,12 +298,12 @@ header {
     #76b82a 100%
   );
   box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
-  */
+  /
   box-shadow: 6px 3px 6px rgba(0, 0, 0, 0.132);
   background: linear-gradient(135deg, #00c4cc, #7d2ae8);
   z-index: 20;
   mix-blend-mode: multiply;
-}
+}*/
 /*HEADER Media Query*/
 @media only screen and (min-width: 800px) {
   .header-bottom .nav {
@@ -346,26 +349,11 @@ header {
   justify-content: center;
   background-size: cover;
 }
-.section-banner * {
-  font-family:
-    Poppins,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
-}
 /* para adicionar o elemento com blur */
 .section-banner::before {
   content: "";
   height: calc(100vh - 125px);
-  backdrop-filter: blur(7px); /*20px antes do vídeo*/
+  backdrop-filter: blur(3px); /*20px antes do vídeo*/
   /*background-color: #06111391;*/
   /*background-color: #66666664;*/
   background-color: #2230448a;
@@ -441,9 +429,9 @@ header {
     #78c1d382 70%,
     var(--primaruBlue7) 100%
   );*/
-  background-color: var(--primaruBlue8);
+  background-color: #004d6b67;
   /*box-shadow: 0 2px 8px #3067757e;*/
-  box-shadow: 0 10px 25px -5px var(--tw-shadow-color, #004d6bc9);
+  box-shadow: 0 10px 25px -5px var(--tw-shadow-color, #00283894);
   transition: all 0.2s;
   color: var(--primaruBlue1);
 }
