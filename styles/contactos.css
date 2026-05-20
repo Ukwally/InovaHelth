@@ -191,15 +191,7 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: linear-gradient(
-    90deg,
-    #e3003a 0%,
-    #643688 21%,
-    #14387f 41%,
-    #0070e5 64%,
-    #76b82a 84%,
-    #fcbe00 100%
-  );
+  background: linear-gradient(90deg, #14387f 0%, #0070e5 64%, #76b82a 100%);
   z-index: 20;
   box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
   mix-blend-mode: multiply;
@@ -396,6 +388,7 @@ textarea::placeholder {
   background-color: var(--primaruBlue2);
   padding: 10px;
   border-radius: 5px;
+  box-shadow: 0 25px 60px -15px var(--tw-shadow-color, #0089bf33);
 }
 .div-mapa .mapa {
   border: none;
