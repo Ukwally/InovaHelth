@@ -148,8 +148,9 @@ body {
 }
 header {
   position: relative;
-  height: 126px;
+  height: 114px;
   width: 100%;
+  box-shadow: 0 10px 25px -5px var(--tw-shadow-color, #00283894);
 }
 .header-top {
   height: 36px;
@@ -179,7 +180,7 @@ header {
   text-decoration: none;
 }
 .header-bottom {
-  height: 90px;
+  height: 78px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -189,10 +190,22 @@ header {
   background-color: white;
 }
 .header-bottom div {
-  height: 60px;
+  height: 45px;
 }
 .header-bottom div img {
   max-height: 100%;
+  /*filter: grayscale(100) brightness(0) invert(1);*/
+}
+@media only screen and (min-width: 800px) {
+  header {
+    height: 126px;
+  }
+  .header-bottom {
+    height: 90px;
+  }
+  .header-bottom div {
+    height: 60px;
+  }
 }
 .header-bottom i svg {
   stroke: var(--secundaryBlue15);
@@ -347,7 +360,7 @@ header {
   background: url(../assets/images/banner1.2.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  height: calc(100vh - 125px);
+  height: calc(100vh - 110px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -356,7 +369,7 @@ header {
 /* para adicionar o elemento com blur */
 .section-banner::before {
   content: "";
-  height: calc(100vh - 125px);
+  height: calc(100vh - 110px);
   backdrop-filter: blur(6px); /*20px antes do vídeo*/
   /*background-color: #06111391;*/
   /*background-color: #66666664;*/
