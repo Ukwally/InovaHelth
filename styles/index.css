@@ -188,13 +188,20 @@ header {
   padding: 0 10%;
   box-sizing: border-box;
   background-color: white;
+  background-color: var(--primaruBlue12);
+  & nav * {
+    color: #fff!important;
+  }
+  & nav span svg {
+    stroke: #fff!important;
+  }
 }
 .header-bottom div {
   height: 45px;
 }
 .header-bottom div img {
   max-height: 100%;
-  /*filter: grayscale(100) brightness(0) invert(1);*/
+  filter: grayscale(100) brightness(0) invert(1);
 }
 @media only screen and (min-width: 800px) {
   header {
