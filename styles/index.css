@@ -187,14 +187,11 @@ header {
   align-items: center;
   padding: 0 10%;
   box-sizing: border-box;
-  background-color: white;
-  background-color: var(--primaruBlue12);
-  & nav * {
-    color: #fff!important;
-  }
-  & nav span svg {
-    stroke: #fff!important;
-  }
+  background-color: rgba(5, 148, 167, 0.575);
+  backdrop-filter: blur(18px);
+}
+.header-bottom::backdrop {
+  filter: blur(20px);
 }
 .header-bottom div {
   height: 45px;
