@@ -27,9 +27,15 @@ window.addEventListener('scroll', function () {
 
 //Para adicionar animação ao banner-text quando a pagina for carregada
 window.addEventListener('DOMContentLoaded', function () {
-    const bannertext = document.querySelector('#banner-content');
+    const bannertext = document.querySelector('#banner-content-h3');
+    const bannertext2 = document.querySelector('#banner-content-h5');
+    const bannertext3 = document.querySelector('#banner-content-p');
+    const bannerbtn3 = document.querySelector('#banner-content-btn');
     if (bannertext) {
         bannertext.classList.add('visible');
+        bannertext2.classList.add('visible');
+        bannertext3.classList.add('visible');
+        bannerbtn3.classList.add('visible');
     }
 });
 
