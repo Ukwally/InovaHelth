@@ -270,6 +270,7 @@ header {
   font-size: 13px;
   margin-left: 10px;
   text-transform: uppercase;
+  margin-top: 10px;
 }
 /*OBS ATT REMOVER O CODIGO ABAIXO*/
 .header-bottom .nav .nav-item-set a .iten-menu-icon {
@@ -350,6 +351,7 @@ header {
     color: grey;
     font-size: 12px;
     font-weight: unset;
+    margin-top: 0;
   }
   .header-bottom .nav .nav-item-set a .iten-menu-icon {
     display: none;
@@ -420,9 +422,9 @@ header {
   color: var(--primaruBlue3);
   background: linear-gradient(
     45deg,
-    var(--primaruBlue3),
-    var(--primaruBlue6),
-    var(--primaruBlue3)
+    var(--primaruBlue1) 20%,
+    var(--primaruBlue3) 40%,
+    var(--primaruBlue1)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -787,7 +789,7 @@ header {
   margin: 20px;
   padding: 10px;
   border-radius: 20px;
-  box-shadow: 0px 8px 10px #32859a1c;
+  box-shadow: 0px 2px 3px #32859a1c;
 
   /*Animação*/
   transform: translateY(80px);
@@ -795,6 +797,9 @@ header {
   transition: all 1s;
   display: flex;
   flex-direction: column;
+}
+.section-diferencial-content .each-diferencial:hover {
+  box-shadow: 0px 8px 10px #32859a1c;
 }
 .section-diferencial-content .each-diferencial.visible {
   transform: translateY(0);
@@ -964,6 +969,9 @@ header {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+}
+.section-presentation .section-presentation-set .section-presentation-text h1 {
+  color: var(--primaruBlue1);
 }
 .section-presentation
   .section-presentation-set

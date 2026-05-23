@@ -108,8 +108,26 @@ html {
   --dark19: #0d0d0d;
   --dark20: #000000;
 
-  --bg: #f8f9fa;
   --complemetrar: #ad4601;
+  --color-green-50: #f0fdf4;
+  --color-green-100: #dcfce7;
+  --color-green-200: #b9f8cf;
+  --color-green-600: #00a63e;
+  --color-green-700: #008235;
+  --color-green-800: #026630;
+  --color-green-900: #0d542b;
+  --color-blue: #0089bf;
+  --color-slate-200: oklch(92.9% 0.013 255.508);
+  --color-slate-300: oklch(86.9% 0.022 252.894);
+  --color-slate-400: oklch(70.4% 0.04 256.788);
+  --color-slate-500: oklch(55.4% 0.046 257.417);
+  --color-slate-600: oklch(44.6% 0.043 257.281);
+  --color-slate-700: oklch(37.2% 0.044 257.287);
+  --color-slate-800: oklch(27.9% 0.041 260.031);
+  --color-slate-900: oklch(20.8% 0.042 265.755);
+  --color-slate-950: oklch(12.9% 0.042 264.695);
+  --bg: #f8fafc;
+  --bg-light: #f8f9fa;
 }
 .sticked {
   position: fixed;
@@ -225,6 +243,7 @@ header {
   font-size: 13px;
   margin-left: 10px;
   text-transform: uppercase;
+  margin-top: 10px;
 }
 .header-bottom .nav .nav-item-set a .iten-menu-icon {
   display: inline-flex;
@@ -236,7 +255,6 @@ header {
   border-radius: 50%;
   margin-right: 10px;
   display: none;
-
 }
 .header-bottom .nav .nav-item-set a .iten-menu-icon i {
   color: var(--primaruBlue1);
@@ -352,7 +370,7 @@ header {
   justify-content: space-between;
   background: linear-gradient(
     135deg,
-    var(--primaruBlue10)70%,
+    var(--primaruBlue10) 70%,
     var(--primaruBlue12)
   );
   z-index: -1;
@@ -363,9 +381,9 @@ header {
   width: 200px;
   border-radius: 50%;
   background: radial-gradient(
-    var(--terciaryBlue6),
-    var(--primaruBlue14),
-    #3ea7c1,
+    var(--terciaryBlue7),
+    var(--primaruBlue7),
+    #3ec1c1ce,
     transparent,
     transparent,
     transparent
@@ -382,13 +400,13 @@ header {
 }
 
 .section-bio .header-bio h1 {
-  color: var(--primaruBlue2);
+  color: var(--primaruBlue1);
   font-size: 2.5rem;
 }
 .section-bio .header-bio p {
   color: var(--primaruBlue3);
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .section-bio .bio-content {
@@ -433,21 +451,34 @@ header {
 /*.section-missao-visao #img-bg-misao-visao {
   position: absolute;
   z-index: -1;
-  height: 200px;
+  height: 300px;
   left: 10%;
+  filter: blur(1px) grayscale(20%);
+  opacity: 0.1;
 }*/
+
 .section-missao-visao-set {
   display: flex;
   flex-wrap: wrap;
+  box-shadow: 0 10px 25px -5px var(--tw-shadow-color, #0089bf25);
+  border-radius: 10px;
 }
 .section-missao-visao .header-missao-visao h1 {
-  color: var(--primaruBlue15);
+  color: var(--primaruBlue10);
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 100px;
   text-align: center;
 }
 .section-missao-visao .header-missao-visao p {
-  color: var(--dark12);
-  font-size: 1.2rem;
+  color: var(--color-slate-500);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 10px;
   text-align: center;
+}
+.section-missao-visao .header-missao-visao span {
+  color: var(--color-blue);
 }
 
 .div-missao-visao {
@@ -455,29 +486,37 @@ header {
   max-width: 300px;
   margin: 10px;
   padding: 15px;
-  border-radius: 7px;
   display: flex;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  border: 1px solid var(--primaruBlue2);
+  /*
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(137, 161, 165, 0.062);*/
   align-items: center;
 }
+/*ATT OBS estas bordas abaixo em apenas um dos cards pode causar assimetria*/
+.div-missao-visao:first-child {
+  border-bottom: 2px solid var(--bg);
+}
+@media only screen and (min-width: 800px) {
+  .div-missao-visao:first-child {
+    border-right: 2px solid var(--bg);
+  }
+}
 .div-missao-visao .div-missao-visao-icon {
-  background-color: var(--primaruBlue1);
-  width: 80px;
-  height: 80px;
+  background-color: var(--primaruBlue2);
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 40px;
+  border-radius: 10px;
   margin-right: 10px;
-  border: 1.4px dashed var(--primaruBlue9);
   box-sizing: border-box;
 }
 .div-missao-visao .div-missao-visao-icon img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   /* filter: brightness(0) invert(1);*/
-  opacity: 0.2;
+  opacity: 0.7;
 }
 .div-missao-visao-txt {
   max-width: 200px;
@@ -491,7 +530,7 @@ header {
   text-transform: uppercase;
 }
 .div-missao-visao .div-missao-visao-txt .div-missao-visao-descricao {
-  color: var(--dark10);
+  color: var(--color-slate-500);
   font-size: 1rem;
   font-family:
     system-ui,
