@@ -215,8 +215,8 @@ header {
   display: none;
 }
 .header-bottom .nav {
-  background-color: rgba(0, 0, 0, 0.459);
-  backdrop-filter: blur(1px);
+  background-color: #0c222727;
+  backdrop-filter: blur(2px);
   position: fixed;
   height: 110vh;
   width: 100vw;
@@ -226,7 +226,7 @@ header {
   overflow: hidden;
 }
 .header-bottom .nav .icon-close-menu {
-  background-color: var(--primaruBlue13);
+  background-color: var(--primaruBlue10);
   display: flex;
   width: 80vw;
   padding: 5px 20px;
