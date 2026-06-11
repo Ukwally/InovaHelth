@@ -76,7 +76,8 @@
                     na melhoria da eficiência, inovação
                     <br> e execução de projetos estratégicos.
                 </p>
-                <button id="banner-content-btn"><span class="banner-cta-span1">Explorar</span> <span class="banner-cta-span2">▶</span>
+                <button id="banner-content-btn"><span class="banner-cta-span1">Explorar</span> <span
+                        class="banner-cta-span2">▶</span>
                 </button>
             </div>
         </section>
@@ -1241,9 +1242,25 @@
                     </div>
                 </div>
                 <div class="section-presentation-banner">
-                    <div class="presentation-btn-play">
+                    <div class="presentation-btn-play" onclick="abrirModal()">
                         <span>▶</span>
                     </div>
+                </div>
+            </div>
+            <div class="modal-set hidden-menu" id="modal-set">
+                <span>
+                    <small>INOVAHEALTH CONSULTING</small>
+                    <svg onclick="abrirModal()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-x-icon lucide-x">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </span>
+                <div class="video" id="video">
+                    <video style="object-fit:cover" autoplay controls>
+                        <source src="./assets/videos/5406015-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
 

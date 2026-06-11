@@ -52,3 +52,11 @@ function abrirMenu() {
     }, 1);
 
 }
+function abrirModal() {
+    document.getElementById('modal-set').classList.toggle('hidden-menu');
+
+    setTimeout(() => {
+        document.getElementById('video').classList.toggle('visivel');
+    }, 1);
+
+}

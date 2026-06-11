@@ -1,4 +1,7 @@
 * {
+  /*
+  font-family: Inter, sans-serif;
+  */
   font-family:
     ui-sans-serif,
     system-ui,
@@ -141,7 +144,8 @@ body {
 }
 header {
   position: relative;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 7px 1px var(--tw-shadow-color, #004f6e4b);
+  z-index: 7;
 }
 .header-top {
   height: 36px;
@@ -171,7 +175,7 @@ header {
   text-decoration: none;
 }
 .header-bottom {
-  height: 90px;
+  height: 82px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -181,7 +185,7 @@ header {
   background-color: white;
 }
 .header-bottom div {
-  height: 60px;
+  height: 45px;
 }
 .header-bottom div img {
   max-height: 100%;
@@ -201,7 +205,7 @@ header {
   overflow: hidden;
 }
 .header-bottom .nav .icon-close-menu {
-  background-color: var(--primaruBlue13);
+  background-color: var(--primaruBlue10);
   display: flex;
   width: 80vw;
   padding: 5px 20px;
@@ -237,8 +241,8 @@ header {
 
 .header-bottom .nav .nav-item-set a {
   text-decoration: none;
-  color: var(--primaruBlue14);
-  font-weight: 600;
+  color: var(--primaruBlue10);
+  font-weight: 400;
   padding: 10px;
   font-size: 13px;
   margin-left: 10px;
@@ -319,7 +323,7 @@ header {
     transform: translateX(0);
   }
   .header-bottom .nav .nav-item-set a {
-    color: grey;
+    color: var(--color-slate-500);
     font-size: 12px;
     font-weight: unset;
   }
@@ -469,6 +473,7 @@ header {
   text-transform: uppercase;
   margin-top: 100px;
   text-align: center;
+  font-weight: 400;
 }
 .section-missao-visao .header-missao-visao p {
   color: var(--color-slate-500);
@@ -499,6 +504,7 @@ header {
 @media only screen and (min-width: 800px) {
   .div-missao-visao:first-child {
     border-right: 2px solid var(--bg);
+    border-bottom: 0;
   }
 }
 .div-missao-visao .div-missao-visao-icon {
@@ -776,7 +782,7 @@ header {
   padding: 20px 0;
 }
 .section-facs .section-facs-set .section-facs-item {
-  background-color: var(--primaruBlue12);
+  background-color: var(--primaruBlue11);
   padding: 10px 20px;
   margin-bottom: 20px;
   border-radius: 7px;
@@ -799,7 +805,7 @@ header {
   height: 0px;
   box-sizing: border-box;
   transition: all 0.4s;
-  background-color: #3ea7c157;
+  background-color: #52b0c7a6;
   padding-left: 20px;
   border-radius: 10px;
 }

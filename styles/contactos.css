@@ -107,6 +107,15 @@ html {
   --dark18: #1a1a1a;
   --dark19: #0d0d0d;
   --dark20: #000000;
+  --color-slate-200: oklch(92.9% 0.013 255.508);
+  --color-slate-300: oklch(86.9% 0.022 252.894);
+  --color-slate-400: oklch(70.4% 0.04 256.788);
+  --color-slate-500: oklch(55.4% 0.046 257.417);
+  --color-slate-600: oklch(44.6% 0.043 257.281);
+  --color-slate-700: oklch(37.2% 0.044 257.287);
+  --color-slate-800: oklch(27.9% 0.041 260.031);
+  --color-slate-900: oklch(20.8% 0.042 265.755);
+  --color-slate-950: oklch(12.9% 0.042 264.695);
 }
 .sticked {
   position: fixed;
@@ -179,7 +188,7 @@ header {
 }
 .header-bottom nav a {
   text-decoration: none;
-  color: grey;
+  color: var(--color-slate-500);
   margin-left: 10px;
   font-size: 12px;
   text-transform: uppercase;
@@ -273,6 +282,9 @@ main {
 }
 .contactos-linhas .contactos-linha .contacto-icon svg {
   stroke: white;
+}
+.contactos-linhas .contactos-linha .contacto-iten b {
+  font-weight: 500;
 }
 .contactos-linhas .contactos-cta {
   background-color: var(--primaruBlue9);
@@ -384,7 +396,7 @@ textarea::placeholder {
 }
 .div-mapa-introduction h1 {
   font-size: 2rem;
-  color: var(--primaruBlue17);
+  color: var(--primaruBlue10);
 }
 .div-mapa-introduction p {
   font-size: 0.9rem;
