@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // para adicionar animação qunado o evento vor scroll
 window.addEventListener('scroll', function () {
     const boxes = document.querySelectorAll('.animado');
-
     // Verifica se o elemento está visível na tela
     boxes.forEach(function (box) {
         const boxPosition = box.getBoundingClientRect().top;
@@ -23,6 +22,27 @@ window.addEventListener('scroll', function () {
             box.classList.add('visible');
         }
     });
+
+
+    const menuActivator = document.getElementById('menuActivator');
+    const coloredHeader = document.querySelectorAll('.coloredIten');
+    const menuActivatorPosition = menuActivator.getBoundingClientRect().top;
+    const alturaDocument = document.getElementById('body').scrollHeight;
+    const alturaSeccaoDiferencial = document.getElementById('section-diferencial').scrollHeight;
+
+    const alturavalida = menuActivatorPosition + alturaSeccaoDiferencial;
+
+    if (menuActivatorPosition < window.innerHeight / 1.5 ) {
+        coloredHeader.forEach((iten) => {
+            iten.classList.add('colored')
+        });
+    } else {
+
+        coloredHeader.forEach((iten) => {
+            iten.classList.remove('colored')
+        });
+    }
+
 });
 
 //Para adicionar animação ao banner-text quando a pagina for carregada
@@ -53,7 +73,7 @@ function abrirMenu() {
 
 }
 function abrirModal() {
-    document.getElementById('modal-set').classList.toggle('hidden-menu');
+    document.getElementById('modal-set').classList.toggle('hidden-modal');
 
     setTimeout(() => {
         document.getElementById('video').classList.toggle('visivel');

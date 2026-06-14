@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body id="body">
     <header>
         <div class="header-top">
             <i class="fa fa-facebook"></i>
@@ -23,10 +23,10 @@
             <i class="fa fa-youtube"></i>
             <i class="fa fa-twitter"></i>
         </div>
-        <div class="header-bottom" id="header">
-            <div><img src="./assets/images/inovaHealthBGLess.png" alt=""></div>
+        <div class="header-bottom coloredIten" id="header">
+            <div><img class="coloredIten" src="./assets/images/inovaHealthBGLess.png" alt=""></div>
             <i onclick="abrirMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                <svg class="coloredIten" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M4 5h16" />
                     <path d="M4 12h16" />
@@ -1012,10 +1012,15 @@
         <section class="section section-servicos">
             <div class="section-titulo-set">
                 <h1 class="section-titulo">Saúde eficiente é o nosso objetivo.</h1>
-                <p class="section-descricao">
+                <!--p-- class="section-descricao">
                     Saúde eficiente é alavancar <b>resultados</b> com a confinça na InovaHealth. Estamos a espera de
                     <b>colaborar</b>
                     consigo, e proporcionar serviços inovadores.
+                </!--p-->
+                <p class="section-descricao">
+                    Soluções inteligentes para <b>otimizar</b> processos clínicos, administrativos e
+                    operacionais,
+                    aumentando a <b>produtividade</b> e a qualidade do atendimento ao paciente.
                 </p>
                 <h1 class="titulo-head">Serviços</h1>
             </div>
@@ -1026,7 +1031,8 @@
                     <span class="servicos-iten-icon">
                         <img src="./assets/images/servico1.png" alt="">
                     </span>
-                    <span class="servicos-iten-nome"> Telemedicina </span>
+                    <!--span class="servicos-iten-nome"> Telemedicina </span-->
+                    <span class="servicos-iten-nome"> Consultoria em Gestão Hospitalar</span>
                     <span class="servicos-iten-btn"> <a href="sobre.html#faqs">Saber mais</a> </span>
                 </div>
                 <div class="section-servicos-iten">
@@ -1034,7 +1040,8 @@
                         <img src="./assets/images/servico1.png" alt="">
                     </span>
                     <!--span-- class="servicos-iten-nome"> Medicina de trabalho </!--span-->
-                    <span class="servicos-iten-nome"> Eficiência de Sistemas de Saúde</span>
+                    <!--span class="servicos-iten-nome"> Eficiência de Sistemas de Saúde</span-->
+                    <span class="servicos-iten-nome"> Gestão de Pacientes</span>
                     <span class="servicos-iten-btn"> <a href="sobre.html#faqs">Saber mais</a> </span>
                 </div>
                 <div class="section-servicos-iten">
@@ -1042,7 +1049,7 @@
                         <img src="./assets/images/servico1.png" alt="">
                     </span>
                     <!--span-- class="servicos-iten-nome"> Anásises de imagem </!--span-->
-                    <span class="servicos-iten-nome"> Gestão de Projetos em Saúde </span>
+                    <span class="servicos-iten-nome"> Gestão de Projetos de Saúde </span>
                     <span class="servicos-iten-btn"> <a href="sobre.html#faqs">Saber mais</a> </span>
                 </div>
                 <div class="section-servicos-iten">
@@ -1050,7 +1057,7 @@
                         <img src="./assets/images/servico1.png" alt="">
                     </span>
                     <!--span-- class="servicos-iten-nome">Consultas de Especialidade </!--span-->
-                    <span class="servicos-iten-nome"> Inovação Organizacional </span>
+                    <span class="servicos-iten-nome"> Gestão de Processos </span>
                     <span class="servicos-iten-btn"> <a href="sobre.html#faqs">Saber mais</a> </span>
                 </div>
             </div>
@@ -1070,7 +1077,7 @@
             </div>
         </!--section-->
 
-        <section class="section section-diferencial">
+        <section class="section section-diferencial" id="section-diferencial">
             <!--div-- class="section-header header-direrencial animado">
                 <h1>O nosso diferencial</h1>
                 <p>Oque nos destaca da maioria?</p>
@@ -1078,10 +1085,10 @@
 
             <div class="section-diferencial-content">
                 <div class=" section-header header-direrencial-in">
-                    <small><!--span></span-->Inovação Tecnológica</small>
+                    <small id="menuActivator"><span></span>Inovação Tecnológica</small>
                     <h1>O nosso diferencial <br><span>que nos destaca da maioria</span></h1>
                     <p class="">
-                        A maior plataforma nacional <br>desenhada para que hospitais, <br>
+                        A maior plataforma nacional desenhada para que hospitais, <br>
                         instituições e governo encontrem <br> soluções para o fortalecimento do ecossistema.
 
                         <!--Em paralelo à exposição um espaço estratégico para debater políticas públicas, apresentar inovações e viabilizar
@@ -1124,7 +1131,7 @@
                     </span>
                     <span class="diferencial-descricao">
                         <b>suporte técnico</b>
-                        <small>Disponível 24/24</small>
+                        <small>Disponível 24h/24h</small>
                     </span>
                 </div>
                 <div class="each-diferencial animado">
@@ -1151,12 +1158,14 @@
 
         </section>
         <section class="section section-equipa animado">
-            <h1>Somos uma Equipa nova com muita força e competencia</h1>
+            <h1>InovaHealth Consulting</h1>
+            <h2>Transformamos a Gestão da Saúde em Resultados sustentáveis.</h2>
             <p>
-                Mais de 9.000 profissionais comprometidos com a sua saúde trabalham para lhe oferecer o melhor
-                atendimento, com o auxílio de meios científicos e tecnológicos de uma saúde moderna, próxima e humana.
+                Na InovaHealth apoiamos instituiçõesde saúde a construir modelos de gestão mais 
+                eficientes, sustentáveis e focados em resultados. Combinamos conhecimento, métodos e 
+                estratégias para ajudar organizaçães a superar desafios, otimizar recursos e prestar serviços de qualidade.
             </p>
-            <a href="sobre.html#equipa">A nossa equipa</a>
+            <a href="contactos.html">Falar com Especialista</a>
         </section>
 
         <!--section-- class="section section-dados">
@@ -1210,7 +1219,7 @@
                                     <polyline points="12 6 12 12 16 14"></polyline>
                                 </svg>
                             </span>
-                            <small>Horas: 08:00h - 17:00h</small>
+                            <small>Horas : 08:00h - 17:00h</small>
                         </div>
                         <div class="section-presentation-each-cards">
                             <span>
@@ -1223,7 +1232,7 @@
                                     <path d="M3 10h18"></path>
                                 </svg>
                             </span>
-                            <small>Dias; De seg. à sex. </small>
+                            <small>Dias : De segunda à sexta </small>
                         </div>
                         <div class="section-presentation-each-cards">
                             <span>
@@ -1236,7 +1245,7 @@
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
                             </span>
-                            <small>Lugares: Angola e servia</small>
+                            <small>Lugares : Angola e servia</small>
                         </div>
 
                     </div>
@@ -1247,12 +1256,12 @@
                     </div>
                 </div>
             </div>
-            <div class="modal-set hidden-menu" id="modal-set">
+            <div class="modal-set hidden-modal" id="modal-set">
                 <span>
                     <small>INOVAHEALTH CONSULTING</small>
-                    <svg onclick="abrirModal()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-x-icon lucide-x">
+                    <svg onclick="abrirModal()" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-x-icon lucide-x">
                         <path d="M18 6 6 18" />
                         <path d="m6 6 12 12" />
                     </svg>
@@ -1401,40 +1410,44 @@
             <div class="news-set">
                 <div class="news-item">
                     <div class="news-item-head">
+                        <span>Últimas Notícias</span>
                         <img src="./assets/images/banner2.jpg" alt="">
                     </div>
                     <div class="news-item-body">
                         <span>A InovaHeath implementa técnicas de telemedicina com foco em dados para insights...</span>
-                        <span><button>Saber mais</button></span>
+                        <span><button>Saber mais ↗ </button></span>
                     </div>
                 </div>
                 <div class="news-item">
                     <div class="news-item-head">
+                        <span>Últimas Notícias</span>
                         <img src="./assets/images/banner2.jpg" alt="">
                     </div>
                     <div class="news-item-body">
                         <span>A InovaHeath implementa técnicas de telemedicina com foco em dados para insights...</span>
-                        <span><button>Saber mais</button></span>
+                        <span><button>Saber mais ↗ </button></span>
                     </div>
                 </div>
                 <div class="news-item">
                     <div class="news-item-head">
+                        <span>Últimas Notícias</span>
                         <img src="./assets/images/female-speci.jpg" alt="">
                     </div>
                     <div class="news-item-body">
                         <span>A InovaHealth organiza planos de ação, seleciona especialistas e indica
                             instituições...</span>
-                        <span><button>Saber mais</button></span>
+                        <span><button>Saber mais ↗ </button></span>
                     </div>
                 </div>
                 <div class="news-item">
                     <div class="news-item-head">
+                        <span>Últimas Notícias</span>
                         <img src="./assets/images/female-speci.jpg" alt="">
                     </div>
                     <div class="news-item-body">
                         <span>A InovaHealth organiza planos de ação, seleciona especialistas e indica
                             instituições...</span>
-                        <span><button>Saber mais</button></span>
+                        <span><button>Saber mais ↗ </button></span>
                     </div>
                 </div>
             </div>

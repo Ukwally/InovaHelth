@@ -141,6 +141,7 @@ html {
 body {
   margin: 0;
   color: #29373d;
+  color: var(--color-slate-600);
 }
 header {
   position: relative;
@@ -340,7 +341,6 @@ header {
   font-size: 2.5rem;
 }
 .section-header p {
-  color: var(--dark12);
   font-size: 1.2rem;
 }
 .section-bio {
@@ -374,6 +374,7 @@ header {
   justify-content: space-between;
   background: linear-gradient(
     135deg,
+    var(--primaruBlue12) 10%,
     var(--primaruBlue10) 70%,
     var(--primaruBlue12)
   );
@@ -385,9 +386,8 @@ header {
   width: 200px;
   border-radius: 50%;
   background: radial-gradient(
-    var(--terciaryBlue7),
-    var(--primaruBlue7),
-    #3ec1c1ce,
+    var(--terciaryBlue12),
+    var(--primaruBlue11),
     transparent,
     transparent,
     transparent
@@ -415,7 +415,7 @@ header {
 
 .section-bio .bio-content {
   color: var(--dark1);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .section-bio .bio-cards {
   display: flex;
@@ -483,7 +483,14 @@ header {
   text-align: center;
 }
 .section-missao-visao .header-missao-visao span {
-  color: var(--color-blue);
+  color: var(--primaruBlue11);
+
+  & destaque {
+    text-decoration-line: underline;
+    text-decoration-color: var(--bg-light);
+    text-decoration-style: wavy;
+    text-underline-offset: 10px;
+  }
 }
 
 .div-missao-visao {
@@ -607,6 +614,15 @@ header {
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
+
+  background: linear-gradient(
+    135deg,
+    var(--primaruBlue10),
+    var(--primaruBlue6),
+    var(--primaruBlue10)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .section-dados-set .section-dados-item .dados-item-titulo {
   color: var(--dark12);
@@ -623,9 +639,9 @@ header {
 }
 .section-dados-set .section-dados-item ul li span:first-child {
   /*background-color: rgb(0, 207, 100);*/
-  color: rgb(0, 207, 100);
-  height: 22px;
-  width: 22px;
+  color: rgb(25, 214, 0);
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
