@@ -30,9 +30,17 @@ window.addEventListener('scroll', function () {
     const alturaDocument = document.getElementById('body').scrollHeight;
     const alturaSeccaoDiferencial = document.getElementById('section-diferencial').scrollHeight;
 
-    const alturavalida = menuActivatorPosition + alturaSeccaoDiferencial;
+    
 
-    if (menuActivatorPosition < window.innerHeight / 1.5 ) {
+    console.log('alturaDocument' + alturaDocument)
+    //console.log('alturavalida')
+    console.log('menuActivatorPosition' + menuActivatorPosition)
+    console.log('alturaSeccaoDiferencial' + alturaSeccaoDiferencial)
+
+
+    //if (menuActivatorPosition < window.innerHeight / 1.5) {
+    //if (menuActivatorPosition < window.innerHeight / 1.5 &&  alturaSeccaoDiferencial - menuActivatorPosition < window.innerHeight / 1.5 ) {
+    if (menuActivatorPosition < window.innerHeight / 1.5 &&  menuActivatorPosition > -700 ) {
         coloredHeader.forEach((iten) => {
             iten.classList.add('colored')
         });
