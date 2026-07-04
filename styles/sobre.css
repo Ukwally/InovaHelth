@@ -195,7 +195,7 @@ header {
   display: none;
 }
 .header-bottom nav {
-  background-color: rgba(0, 0, 0, 0.459);
+  background-color: #44525510;
   backdrop-filter: blur(1px);
   position: fixed;
   height: 110vh;
@@ -386,7 +386,7 @@ header {
   width: 200px;
   border-radius: 50%;
   background: radial-gradient(
-    var(--terciaryBlue12),
+    var(--primaruBlue16),
     var(--primaruBlue11),
     transparent,
     transparent,
@@ -426,16 +426,17 @@ header {
   border-radius: 10px;
 }
 .section-bio .bio-cards .bio-card {
-  background-color: var(--primaruBlue10);
+  border: 1px solid var(--primaruBlue10);
   padding: 20px;
   margin: 5px 20px;
   border-radius: 10px;
   color: #fff;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 400;
   box-shadow: 0px 0 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100%;
+  backdrop-filter: blur(17px);
 }
 @media only screen and (min-width: 800px) {
   .section-bio .bio-cards .bio-card {
@@ -614,15 +615,7 @@ header {
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
-
-  background: linear-gradient(
-    135deg,
-    var(--primaruBlue10),
-    var(--primaruBlue6),
-    var(--primaruBlue10)
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  color: var(--primaruBlue7);
 }
 .section-dados-set .section-dados-item .dados-item-titulo {
   color: var(--dark12);
@@ -639,14 +632,14 @@ header {
 }
 .section-dados-set .section-dados-item ul li span:first-child {
   /*background-color: rgb(0, 207, 100);*/
-  color: rgb(25, 214, 0);
+  color: rgb(74, 233, 0);
   height: 20px;
   width: 20px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 11px;
+  font-size: 10px;
   border: 1px solid rgb(216, 241, 228);
   box-sizing: border-box;
 }
