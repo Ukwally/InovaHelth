@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -30,12 +32,26 @@
                     <path d="M4 19h16" />
                 </svg>
             </i>
-            <nav>
-                <a href="#">Corporativo </a>
-                <!--a href="#">Utente </a>
-                <a-- href="#">Profissional </a-->
-                <a href="sobre.html">sobre</a>
-                <a href="index.html">inicio</a>
+            <nav class="nav hidden-menu" id="menu">
+                <span class="icon-close-menu" onclick="abrirMenu()" id="icon-close-menu-id">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-x-icon lucide-x">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </span>
+                <span class="nav-item-set" id="nav-item-set-id">
+                    <a href="#">Corporativo </a>
+                    <!--a href="#">Utente </a>
+                    <a-- href="#">Profissional </a-->
+                    <a href="sobre.html">sobre</a>
+                    <a href="index.html">inicio</a>
+                    <a href="index.html#servicos" onclick="abrirMenu()"> <span class="iten-menu-icon"> <i
+                                class="fa fa-phone-square"></i></span>Soluções</a>
+                    <a href="index.html#noticias" onclick="abrirMenu()"> <span class="iten-menu-icon"> <i
+                                class="fa fa-phone-square"></i></span> Noticias</a>
+                </span>
             </nav>
         </div>
     </header>
@@ -85,7 +101,7 @@
                     </div>
                     <div class="contactos-cta">
                         <span class="cta-titulo">Não exites!</span>
-                        <span class="cta-texto">Estamos expectantes pelo teu contacto.</span>
+                        <span class="cta-texto">Estamos expectantes pelo teu contacto</span>
                     </div>
                 </div>
                 <div class="contactos-formulario">
@@ -165,4 +181,5 @@
         </div>
         <div class="footer-CopyRight"><span>&copy</span> InovaHealth, todos os direitos reservados.</div>
     </footer>
+    <script src="./scripts/index.js"></script>
 </body>
