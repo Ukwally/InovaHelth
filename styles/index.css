@@ -3,7 +3,6 @@
   font-family: Inter, sans-serif;
   */
   font-family:
-    Lato,
     ui-sans-serif,
     system-ui,
     -apple-system,
@@ -143,9 +142,15 @@ body {
 .texto-aculto-para-mobile {
   display: none;
 }
+.texto-aculto-para-web {
+  display: flex;
+}
 @media only screen and (min-width: 800px) {
   .texto-aculto-para-mobile {
     display: initial;
+  }
+  .texto-aculto-para-web {
+    display: none !important;
   }
 }
 header {
@@ -270,6 +275,57 @@ header {
 .header-bottom .nav #nav-item-set-id.visivel {
   transform: translateX(0);
 }
+.header-bottom .nav .nav-adicional {
+  flex: 1;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 100px;
+  background: linear-gradient(
+    180deg,
+    #fff,
+    #fff,
+    var(--primaruBlue7),
+    var(--primaruBlue9),
+    var(--primaruBlue12)
+  );
+}
+.header-bottom .nav .nav-adicional a {
+  color: #fff !important;
+}
+.header-bottom .nav .nav-adicional label {
+  padding:0 10px;
+  font-size: 11px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: var(--primaruBlue1);
+}
+.header-bottom .nav .nav-adicional .news-later-input {
+  background-color: #fff;
+  border: 1ps solid var(--bg-2);
+  height: 40px;
+  width: 90%;
+  margin: 20px 5%;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.header-bottom .nav .nav-adicional .news-later-input input {
+  width: 68%;
+  height: 100%;
+  box-sizing: border-box;
+  border: none;
+  overflow: hidden;
+  object-fit: cover;
+  margin-left: 10%;
+}
+.header-bottom .nav .nav-adicional .news-later-input button {
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  float: right;
+  color: var(--color-slate-600);
+}
+
 .header-bottom .openMenu {
   display: block;
   font-size: 25px;
