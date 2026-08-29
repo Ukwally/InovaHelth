@@ -144,6 +144,17 @@ body {
   color: #29373d;
   color: var(--color-slate-600);
 }
+.texto-aculto-para-web {
+  display: flex;
+}
+@media only screen and (min-width: 800px) {
+  .texto-aculto-para-mobile {
+    display: initial;
+  }
+  .texto-aculto-para-web {
+    display: none !important;
+  }
+}
 header {
   position: relative;
   box-shadow: 1px 1px 7px 1px var(--tw-shadow-color, #004f6e4b);
@@ -236,6 +247,60 @@ header {
 }
 .header-bottom .nav #nav-item-set-id.visivel {
   transform: translateX(0);
+}
+.header-bottom .nav .nav-adicional {
+  flex: 1;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 100px;
+  /*
+  background: linear-gradient(
+    180deg,
+    #fff,
+    #fff,
+    var(--primaruBlue7),
+    var(--primaruBlue9),
+    var(--primaruBlue12)
+  );*/
+}
+.header-bottom .nav .nav-adicional a {
+  color: var(--color-slate-600) !important;
+  font-weight: 300 !important;
+}
+.header-bottom .nav .nav-adicional label {
+  padding: 0 10px;
+  font-size: 11px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: var(--color-slate-500);
+}
+.header-bottom .nav .nav-adicional .news-later-input {
+  background-color: #fff;
+  height: 40px;
+  width: 90%;
+  margin: 20px 5%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: -1px 0px 10px 2px #1f536010;
+}
+.header-bottom .nav .nav-adicional .news-later-input input {
+  width: 68%;
+  height: 100%;
+  box-sizing: border-box;
+  border: none;
+  overflow: hidden;
+  object-fit: cover;
+  margin-left: 10%;
+}
+.header-bottom .nav .nav-adicional .news-later-input button {
+  height: calc(100% - 4px);
+  border-radius: 20px;
+  border: none;
+  float: right;
+  color: var(--color-slate-600);
+  background-color: var(--bg-2);
+  font-weight: 600;
 }
 .header-bottom i svg {
   stroke: var(--secundaryBlue15);
@@ -408,7 +473,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  top: 30px;
+  /*top: 30px;*/
   justify-content: center;
   border-radius: 10px;
 }
@@ -578,12 +643,25 @@ header {
     135deg,
     var(--secundaryBlue7) 0%,
     var(--secundaryBlue3) 10%,
-    var(--secundaryBlue10)
+    var(--secundaryBlue12)
   );
   width: 100%;
   height: 5px;
   position: absolute;
   bottom: 0;
+  /*background-size: 1000% 400%;
+  animation: shift-gradient 1s ease-in-out infinite;*/
+}
+@keyframes shift-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .section-dados-set .section-dados-item .purecounter {
   color: var(--primaruBlue12);
@@ -637,6 +715,7 @@ header {
   font-size: 11px;
   color: var(--dark12);
   list-style: circle;
+  font-weight: 300;
 }
 /*Dados Media Query*/
 @media only screen and (min-width: 800px) {
