@@ -291,6 +291,7 @@ header {
 }
 .header-bottom .nav .nav-adicional a {
   color: #fff !important;
+  font-weight: 600!important;
 }
 .header-bottom .nav .nav-adicional label {
   padding:0 10px;
@@ -302,12 +303,12 @@ header {
 }
 .header-bottom .nav .nav-adicional .news-later-input {
   background-color: #fff;
-  border: 1ps solid var(--bg-2);
   height: 40px;
   width: 90%;
   margin: 20px 5%;
   box-sizing: border-box;
   border-radius: 20px;
+  box-shadow: -1px 0px 10px 2px #1f536028;
 }
 .header-bottom .nav .nav-adicional .news-later-input input {
   width: 68%;
@@ -324,6 +325,8 @@ header {
   border: none;
   float: right;
   color: var(--color-slate-600);
+  background-color: var(--bg-2);
+  font-weight: 600;
 }
 
 .header-bottom .openMenu {
