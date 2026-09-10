@@ -283,7 +283,8 @@ header {
   flex: 1;
   flex-direction: column;
   justify-content: end;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
+  /*
   background: linear-gradient(
     180deg,
     #fff,
@@ -291,11 +292,12 @@ header {
     var(--primaruBlue7),
     var(--primaruBlue9),
     var(--primaruBlue12)
-  );
+  );*/
 }
 .header-bottom .nav .nav-adicional a {
-  color: #fff !important;
-  font-weight: 600 !important;
+  color: var(--color-slate-600) !important;
+  font-weight: 300 !important;
+  /*color: #fff !important;*/
 }
 .header-bottom .nav .nav-adicional label {
   padding: 0 10px;
@@ -303,7 +305,7 @@ header {
   margin-left: 10px;
   text-transform: uppercase;
   margin-top: 10px;
-  color: var(--primaruBlue1);
+  color: var(--color-slate-500);
 }
 .header-bottom .nav .nav-adicional .news-later-input {
   background-color: #fff;
@@ -312,7 +314,8 @@ header {
   margin: 20px 5%;
   box-sizing: border-box;
   border-radius: 20px;
-  box-shadow: -1px 0px 10px 2px #1f536028;
+  box-shadow: -1px 0px 10px 2px #1f536010;
+  border: 0.5px solid rgba(226, 232, 240, 0.774);
 }
 .header-bottom .nav .nav-adicional .news-later-input input {
   width: 68%;
@@ -323,6 +326,10 @@ header {
   object-fit: cover;
   margin-left: 10%;
 }
+.header-bottom .nav .nav-adicional .news-later-input input::placeholder {
+  color: var(--color-slate-400);
+  font-weight: 100;
+}
 .header-bottom .nav .nav-adicional .news-later-input button {
   height: calc(100% - 4px);
   border-radius: 20px;
@@ -331,6 +338,7 @@ header {
   color: var(--color-slate-600);
   background-color: var(--bg-2);
   font-weight: 600;
+  margin: 2px;
 }
 
 .header-bottom .openMenu {
@@ -1246,8 +1254,9 @@ header {
 .section-howto .howto-txt ul {
   padding: 0;
   backdrop-filter: blur(10px);
-  padding:10px 7px;
+  padding: 10px;
   border-radius: 20px;
+  width: fit-content;
 }
 .section-howto .howto-txt ul li {
   font-size: 1.3rem;
