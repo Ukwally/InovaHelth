@@ -741,12 +741,10 @@ header {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
 
   scale: 0.7;
-  border: 1px solid var(--primaruBlue5);
   transition: all 0.7s;
 }
 .section-servicos .section-servicos-set .section-servicos-iten.visible {
   scale: 1;
-  border: 1px solid var(--primaruBlue1);
 }
 .section-servicos
   .section-servicos-set
