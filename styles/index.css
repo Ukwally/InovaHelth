@@ -739,6 +739,14 @@ header {
   height: 280px;
   justify-content: center;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+
+  scale: 0.7;
+  border: 1px solid var(--primaruBlue5);
+  transition: all 0.7s;
+}
+.section-servicos .section-servicos-set .section-servicos-iten.visible {
+  scale: 1;
+  border: 1px solid var(--primaruBlue1);
 }
 .section-servicos
   .section-servicos-set
@@ -1254,7 +1262,7 @@ header {
 .section-howto .howto-txt ul {
   padding: 0;
   backdrop-filter: blur(10px);
-  padding: 10px;
+  padding: 13px 10px 13px 13px;
   border-radius: 20px;
   width: fit-content;
 }
